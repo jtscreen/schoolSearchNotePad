@@ -1,0 +1,15 @@
+h1{display: flex; justify-content: center}
+.notes{
+    width: 80%;
+    height: 10vh;
+    border-color: transparent;
+    border-bottom-color: black;
+    overflow: auto;
+}
+#main{
+    text-align: center;
+}
+h2{text-align: left}
+.side{font-size: 17px;}
+#bottom{display: flex; justify-content: space-around;}
+#bottom1{display: flex; justify-content: center;}
