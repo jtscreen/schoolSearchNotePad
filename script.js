@@ -40,13 +40,11 @@ function addToList(rowData){
     const pros = row.PROS;
     const cons = row.CONS;
 
-    let collegeDiv = document.getElementById("list")
+    let collegeDiv = document.getElementById("list");
     let title = document.createElement("h2");
     let para = document.createElement("p");
     title.innerText = `${name}`;
-    para.innerText = `NOTES\n${note}`
-    if (pros != ""){para.innerText += `\n\nPROS\n${pros}`};
-    if(cons != ""){`\n\nCONS\n${cons}`};
+    para.innerText = `NOTES\n${note}\n\nPROS\n${pros}\n\nCONS\n${cons}`;
     collegeDiv.appendChild(title);
     collegeDiv.appendChild(para);
 }
