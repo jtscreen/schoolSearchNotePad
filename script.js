@@ -9,6 +9,9 @@ button.addEventListener("click", updateDB);
 const database = firebase.database().ref();
 
 function updateDB(event){
+    if(schoolName.value == ""){
+        alert("Fill in name of the school and atleast one thought...")
+    } else{
     event.preventDefault();
     const college = schoolName.value;
     const note = notesList.value;
@@ -29,6 +32,8 @@ function updateDB(event){
         CONS: con,
     }
     database.push(data);
+    alert("Added to List")
+    }
 }
 
 database.on('child_added', addToList);
